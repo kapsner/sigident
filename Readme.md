@@ -1,20 +1,18 @@
 # sigident (!!! under development !!!)
 
 <!-- badges: start -->
-[![R CMD Check via {tic}](https://github.com/miracum/clearly-sigident/workflows/R%20CMD%20Check%20via%20{tic}/badge.svg?branch=master)](https://github.com/miracum/clearly-sigident/actions)
-[![linting](https://github.com/miracum/clearly-sigident/workflows/lint/badge.svg?branch=master)](https://github.com/miracum/clearly-sigident/actions)
-[![test-coverage](https://github.com/miracum/clearly-sigident/workflows/test-coverage/badge.svg?branch=master)](https://github.com/miracum/clearly-sigident/actions)
-[![codecov](https://codecov.io/gh/miracum/clearly-sigident/branch/master/graph/badge.svg)](https://codecov.io/gh/miracum/clearly-sigident)
-[![pipeline status](https://gitlab.miracum.org/clearly/sigident/badges/master/pipeline.svg)](https://gitlab.miracum.org/clearly/sigident/commits/master)
-[![coverage report](https://gitlab.miracum.org/clearly/sigident/badges/master/coverage.svg)](https://gitlab.miracum.org/clearly/sigident/commits/master)
+[![R CMD Check via {tic}](https://github.com/kapsner/sigident/workflows/R%20CMD%20Check%20via%20{tic}/badge.svg?branch=master)](https://github.com/kapsner/sigident/actions)
+[![linting](https://github.com/kapsner/sigident/workflows/lint/badge.svg?branch=master)](https://github.com/kapsner/sigident/actions)
+[![test-coverage](https://github.com/kapsner/sigident/workflows/test-coverage/badge.svg?branch=master)](https://github.com/kapsner/sigident/actions)
+[![codecov](https://codecov.io/gh/kapsner/sigident/branch/master/graph/badge.svg)](https://codecov.io/gh/kapsner/sigident)
 <!-- badges: end -->
 
 This is the repository of the R package 'sigident'. It provides core functionalities to identify diagnostic and prognostic signatures from gene expression datasets.
 
 Currently implemented features are:
 
-- merging of microarray datasets (via the R package [`sigident.preproc`](https://github.com/miracum/clearly-sigident.preproc.git))
-- DEG analysis and functional analysis (via the R package [`sigident.func`](https://github.com/miracum/clearly-sigident.func.git))
+- merging of microarray datasets (via the R package [`sigident.preproc`](https://github.com/kapsner/sigident.preproc.git))
+- DEG analysis and functional analysis (via the R package [`sigident.func`](https://github.com/kapsner/sigident.func.git))
 - Identification and validation of diagnostic signatures, using
   + Lasso regression
   + Elastic net regression
@@ -26,8 +24,8 @@ Currently implemented features are:
 You can install *sigident* with the following commands in R:
 
 ```r
-install.packages("devtools")
-devtools::install_github("miracum/clearly-sigident")
+install.packages("remotes")
+remotes::install_github("kapsner/sigident")
 ```
 
 The version of the package, which was used for the publication [A Toolbox for Functional Analysis and the Systematic Identification of Diagnostic and Prognostic Gene Expression Signatures Combining Meta-Analysis and Machine Learning](https://www.mdpi.com/2072-6694/11/10/1606) can anytime be reproduced using the version tag *v0.0.2* during the installation process:
