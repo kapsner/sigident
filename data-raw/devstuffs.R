@@ -171,3 +171,7 @@ usethis::use_git_ignore(".Rproj*")
 usethis::use_git_ignore("*.rds")
 usethis::use_git_ignore("/.vscode")
 usethis::use_git_ignore("!/.lintr")
+
+usethis::use_tidy_description()
+
+badger::badge_doi("10.3390/cancers11101606", color = "yellow")
